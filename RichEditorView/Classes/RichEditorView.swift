@@ -100,6 +100,7 @@ private let DefaultInnerLineHeight: Int = 21
     /// HTML that will be loaded into the editor view once it finishes initializing.
     public var html: String = "" {
         didSet {
+            contentHTML = html
             setHTML(html)
         }
     }
